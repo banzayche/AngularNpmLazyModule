@@ -22,7 +22,7 @@ before_script:
 
 script:
   - npm run build.prod
-
+# just to test
 # before_deploy:
 #   - npm run ghp.fix.paths
 
