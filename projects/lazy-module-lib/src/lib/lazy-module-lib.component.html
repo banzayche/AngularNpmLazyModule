@@ -1,7 +1,8 @@
-<h1>
-  OLA XXX
-</h1>
-<a routerLink="nested" routerLinkActive="active">GO to nested level</a><br />
-<a routerLink="" routerLinkActive="active">GO to level UP</a>
+<div class="container parent2 children">
+  <a class="section-title" routerLink="from-node_modules-level2" routerLinkActive="active">
+    <h4>Level 2 NPM Lazy Loaded <br /><small>Click to load child lazy module</small></h4>
+  </a>
+  <router-outlet></router-outlet>
+</div>
 
-<router-outlet></router-outlet>
+

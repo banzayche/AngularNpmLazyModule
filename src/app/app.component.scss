@@ -1,3 +1,4 @@
+$topMargin: 100px;
 $mainWidth: 700px;
 $generalPadding: 20px;
 $generalBorderRadius: 15px;
@@ -11,15 +12,23 @@ $borderWidth: 1px;
   border-radius: $generalBorderRadius;
   overflow: auto;
 }
-.parent1 {
-  margin: 200px auto;
+main {
+  margin: $topMargin auto;
   width: $mainWidth;
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+}
+.parent1 {
   background-color: rgba(254, 87, 51, 0.9);
 
   .section-title {
     cursor: pointer;
     display: block;
-    width: 300px;
+    color: black;
+    text-decoration: none;
+    width: 350px;
     background-color: #ffb100;
     margin: 0 auto;
     position: relative;
@@ -28,13 +37,18 @@ $borderWidth: 1px;
     box-shadow: 5px 5px #350e0e;
     transition: box-shadow transform linear 200ms;
     margin-bottom: 20px;
-    &:active {
-      box-shadow: none;
-      transform: translate(2px, 2px);
+
+    h4 {
+      font-size: 23px;
+    }
+    small {
+      font-size: 12px;
     }
 
-    small {
-      font-size: 9px;
+    &:active,
+    &.final {
+      box-shadow: none;
+      transform: translate(2px, 2px);
     }
   }
 }
@@ -46,4 +60,40 @@ $borderWidth: 1px;
   padding-bottom: $generalPadding;
   width: auto;
   background-color: rgba(144, 11, 61, 0.49);
+}
+
+
+
+
+// back to beginning
+.to-top{
+	color:rgba(254, 87, 51, 0.9);
+	padding-top:1.8em;
+	display:inline-block;/* or block */
+	position:relative;
+	border-color:rgba(254, 87, 51, 0.9);
+	text-decoration:none;
+	transition:all .3s ease-out;
+}
+.to-top:before{
+	content:'▲';
+	font-size:.9em;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-.7em;
+	border:solid .13em rgba(254, 87, 51, 0.9);
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+.to-top:hover{
+	color:black;
+	border-color:black;
+}
+.to-top:hover:before{
+	transform: rotate(360deg);
 }

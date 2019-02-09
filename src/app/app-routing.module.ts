@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'xxx', pathMatch: 'full' },
-  { path: 'xxx',
+  { path: 'from-node_modules-level1',
     children: [
       { path: '', loadChildren: 'lazy-module-lib#LazyModuleLibModule' }
     ]

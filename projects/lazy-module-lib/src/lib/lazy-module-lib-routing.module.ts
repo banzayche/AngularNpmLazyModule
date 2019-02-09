@@ -7,7 +7,7 @@ const routes: Routes = [
     path: '',
     component: LazyModuleLibComponent,
     children: [
-      { path: 'nested', loadChildren: './xxx2/app.module#AppModuleXXX2' }
+      { path: 'from-node_modules-level2', loadChildren: './lazy-child/lazy-child.module#LazyChildModule' }
     ]
   }
 ];

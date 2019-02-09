@@ -1,10 +1,16 @@
-<div class="container parent1">
-  <div class="section-title"><h4>Level 1 <br><small>Click to load children</small></h4></div>
-  <div class="container parent2 children">
-    <div class="section-title"><h4>Level 1 <br><small>Click to load children</small></h4></div>
-    <div class="container parent3 children">
-      <div class="section-title"><h4>Level 1 <br><small>Click to load children</small></h4></div>
-    </div>
+<main>
+  <h2><a href="/" class="to-top">Back to beggining</a></h2>
+  <div class="container parent1">
+    <a
+      class="section-title"
+      routerLink="from-node_modules-level1"
+      routerLinkActive="active"
+    >
+      <h4>
+        Level 1 MAIN <br />
+        <small>Click to load child module (from node_modules)</small>
+      </h4>
+    </a>
+    <router-outlet></router-outlet>
   </div>
-</div>
-<router-outlet></router-outlet>
+</main>
