@@ -1,0 +1,48 @@
+$mainWidth: 700px;
+$generalPadding: 20px;
+$generalBorderRadius: 15px;
+$borderWidth: 1px;
+
+.container {
+  margin: 0 auto;
+  padding: $generalPadding;
+  border: $borderWidth solid black;
+  text-align: center;
+  border-radius: $generalBorderRadius;
+  overflow: auto;
+}
+.parent1 {
+  margin: 200px auto;
+  width: $mainWidth;
+  background-color: rgba(254, 87, 51, 0.9);
+
+  .section-title {
+    cursor: pointer;
+    display: block;
+    width: 300px;
+    background-color: #ffb100;
+    margin: 0 auto;
+    position: relative;
+    border-radius: $generalBorderRadius;
+    padding: 5px;
+    box-shadow: 5px 5px #350e0e;
+    transition: box-shadow linear 200ms;
+    margin-bottom: 20px;
+    &:active {
+      box-shadow: none;
+    }
+
+    small {
+      font-size: 9px;
+    }
+  }
+}
+.parent2 {
+  width: auto;
+  background-color: rgba(199, 1, 57, 0.49);
+}
+.parent3 {
+  padding-bottom: $generalPadding;
+  width: auto;
+  background-color: rgba(144, 11, 61, 0.49);
+}
