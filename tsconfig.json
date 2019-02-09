@@ -17,6 +17,18 @@
     "lib": [
       "es2018",
       "dom"
-    ]
-  }
+    ],
+    "paths": {
+      "lazy-module-lib": [
+        "dist/lazy-module-lib"
+      ],
+      "lazy-module-lib/*": [
+        "dist/lazy-module-lib/*"
+      ]
+    }
+  },
+  "include": [
+    "./node_modules/lazy-module-lib",
+    "./src"
+  ]
 }

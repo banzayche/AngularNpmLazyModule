@@ -26,10 +26,11 @@ $borderWidth: 1px;
     border-radius: $generalBorderRadius;
     padding: 5px;
     box-shadow: 5px 5px #350e0e;
-    transition: box-shadow linear 200ms;
+    transition: box-shadow transform linear 200ms;
     margin-bottom: 20px;
     &:active {
       box-shadow: none;
+      transform: translate(2px, 2px);
     }
 
     small {
