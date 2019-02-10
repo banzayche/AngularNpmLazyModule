@@ -9,5 +9,11 @@
     "**/*.spec.ts",
     "../node_modules/**/*.spec.ts",
     "../node_modules/**/test.ts"
+  ],
+  "include": [
+    "*.ts",
+    "./environments",
+    "./app",
+    "../node_modules/lazy-module-lib"
   ]
 }
