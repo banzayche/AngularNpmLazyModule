@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var dom = require('gulp-dom');
-const ghpPathPref = 'lazy-loaded-module-thru-npm/';
+const ghpPathPref = 'AngularNpmLazyModule/';
 
 function fixPathProcedure(arr, attrToFix, pref) {
   for (let index = 0; index < arr.length; index++) {
