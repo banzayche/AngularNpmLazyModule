@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
 
+###DESCRIPTION
+This brach keeps chages to show how possible get lazy load module from node_modules (compiled bundle).
+Unfortunatly this ecample works if lazy module have no any his own feature module(lazy modules).
+
 ### Status
 [![Build Status](https://travis-ci.org/banzayche/AngularNpmLazyModule.svg?branch=master)](https://travis-ci.org/banzayche/AngularNpmLazyModule)
 

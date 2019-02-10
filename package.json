@@ -10,7 +10,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "ghp.fix.paths": "./node_modules/.bin/gulp fix.ghp.paths",
-    "serve.prod.files": "npm run build.prod && ./node_modules/.bin/http-server ./dist/lazy-loaded-module-thru-npm"
+    "serve.prod.files": "npm run build.prod && ./node_modules/.bin/http-server ./dist/lazy-loaded-module-thru-npm",
+    "build.lib": "ng build lazy-module-lib && cd ./dist/lazy-module-lib && npm pack",
+    "lib.i": "npm i ./dist/lazy-module-lib/lazy-module-lib-0.0.1.tgz"
   },
   "private": true,
   "dependencies": {

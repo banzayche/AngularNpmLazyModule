@@ -7,7 +7,10 @@ const routes: Routes = [
     path: '',
     component: LazyModuleLibComponent,
     children: [
-      { path: 'from-node_modules-level2', loadChildren: './lazy-child/lazy-child.module#LazyChildModule' }
+      {
+        path: 'from-node_modules-level2',
+        loadChildren: './lazy-child/lazy-child.module#LazyChildModule'
+      }
     ]
   }
 ];
